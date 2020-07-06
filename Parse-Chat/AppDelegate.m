@@ -28,10 +28,6 @@
     PFUser *user = [PFUser currentUser];
     if (user != nil) {
         NSLog(@"Welcome back %@ 😀", user.username);
-
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *chatNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"ChatNavigationController"];
-        self.window.rootViewController = chatNavigationController;
     }
     
     return YES;

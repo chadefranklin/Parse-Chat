@@ -25,11 +25,6 @@
     }];
     [Parse initializeWithConfiguration:configuration];
     
-    PFUser *user = [PFUser currentUser];
-    if (user != nil) {
-        NSLog(@"Welcome back %@ 😀", user.username);
-    }
-    
     return YES;
 }
 
